@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Digital Style</title>
+
+    <style>
+        body {
+            background-color: #ffc1e396;
+        }
+
+        .custom-btn {
+            background-color: #e9b0ffce;
+            color: #fff;
+            border-color: #e9b0ffce;
+        }
+
+        .custom-btn:hover {
+            background-color: #e9b0ff;
+            border-color: #e9b0ff;
+            color: black; 
+        }
+
+        .custom-btn a {
+            color: white; 
+            text-decoration: none;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 90%h;
+            object-fit: cover;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px; 
+            color: #fff;  
+            border-radius: 10px; 
+        }
+    </style>
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm" style="background-color: #ff5c9d">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">Digital Style</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="invest.html">Investement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bank.html">Banking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pay.html">Payment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="insur.html">Insurance</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="wallet.html">Wallet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Log In</a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <container>
+        <h2 class="text-center">Create Account</h2>
+        <p class="text-center">Registration</p>
+        <br>
+        <div class="image-container">
+            <img src="pic/img.png" width="20%" class="logo">
+        </div>
+        <br>
+        <form style="background-color: rgba(0, 0, 0, 0.158);">
+            <div class="form-group">
+                <label for="name">User ID</label>
+                <input type="text" class="form-control" name="name" >
+            </div>
+            <div class="form-group">
+                <label for="name">Pin</label>
+                <input type="text" class="form-control" name="name" >
+            </div>
+            <div class="form-group">
+                <label for="name">Re-enter Pin</label>
+                <input type="text" class="form-control" name="name" >
+            </div>
+            <div class="form-group">
+                <label for="name">Mobile Number</label>
+                <input type="text" class="form-control" name="name" >
+            </div>
+            <div class="form-group">
+                <label for="name">Email</label>
+                <input type="text" class="form-control" name="name" >
+            </div>
+            <div class="form-group">
+                <label for="name">Date Of Birth</label>
+                <input type="date" class="form-control" name="name" >
+            </div>
+            <div class="form-group">
+                <label for="name">Identity Number</label>
+                <input type="text" class="form-control" name="name" >
+            </div>
+            <div class="form-group">
+                <label for="name">Select Identity Type</label>
+                <input type="text" class="form-control" name="name" >
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="check1">
+                <label for="vehicle1">Provide permission for the services</label>
+                <a href="#" style="color: black">Learn More</a>
+            </div>
+        </form>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="login.html" class="btn custom-btn">Register</a>
+            </div>
+        </div>
+    </container>
+    <br>
+    
+
+
+</body>
+</html>

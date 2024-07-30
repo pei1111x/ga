@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Digital Style</title>
+
+    <style>
+        body {
+            background-color: #ffc1e396;
+        }
+
+
+        .custom-btn {
+            background-color: #e9b0ffce;
+            color: #fff;
+            border-color: #e9b0ffce;
+        }
+
+        .custom-btn:hover {
+            background-color: #e9b0ff;
+            border-color: #e9b0ff;
+            color: black; 
+        }
+
+        .custom-btn a {
+            color: white; 
+            text-decoration: none;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .tab {
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .tab.active {
+            color: white;
+            font-weight: bold;
+        }
+
+        .options {
+            padding: 20px 0;
+        }
+        
+        .option {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            background-color: #fff;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .option img {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .option span {
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+        
+        .arrow {
+            font-size: 20px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm" style="background-color: #ff5c9d">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">Digital Style</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="invest.html">Investement</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand" href="bank.html">Banking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pay.html">Payment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="insur.html">Insurance</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="wallet.html">Wallet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+                <li class="nav-item">
+                    <a class="navbar-brand">Jane Tan</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Log In</a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="tabs">
+            <div class="tab active">TRANSFER</div>
+            <div class="tab">RECIPIENTS</div>
+            <div class="tab">PROFILE</div>
+        </div>
+        <div class="options">
+            <div class="option">
+                <a href="paynow2.html" style="text-decoration: none; color: black; text-align: left;">
+                    <img src="pic/phone.png" alt="Mobile">
+                    <span>PayNow to Mobile</span>
+                </a>
+                <div class="arrow">&gt;</div>
+            </div>
+
+            <div class="option">
+                <a href="#" style="text-decoration: none; color: black; text-align: left;">
+                    <img src="pic/ic.png" alt="NRIC/FIN">
+                    <span>PayNow to NRIC/FIN</span>
+                </a>
+                <div class="arrow">&gt;</div>
+            </div>
+
+            <div class="option">
+                <a href="#" style="text-decoration: none; color: black; text-align: left;">
+                    <img src="pic/uen.png" alt="UEN">
+                    <span>PayNow to UEN</span>
+                </a>
+                <div class="arrow">&gt;</div>
+            </div>
+
+            <div class="option">
+                <a href="#" style="text-decoration: none; color: black; text-align: left;">
+                    <img src="pic/vpm.png" alt="VPA">
+                    <span>PayNow to VPA</span>
+                </a>
+                <div class="arrow">&gt;</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

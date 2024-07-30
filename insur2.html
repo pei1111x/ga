@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Digital Style</title>
+
+    <style>
+        body {
+            background-color: #ffc1e396;
+        }
+
+
+        .custom-btn {
+            background-color: #e9b0ffce;
+            color: #fff;
+            border-color: #e9b0ffce;
+            width: 100px;
+        }
+
+        .custom-btn:hover {
+            background-color: #e9b0ff;
+            border-color: #e9b0ff;
+            color: black; 
+        }
+
+        .custom-btn a {
+            color: white; 
+            text-decoration: none;
+        }
+
+        .current-plan {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .current-plan img {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .current-plan p {
+            margin: 0;
+        }
+
+        .services {
+            padding: 10px;
+        }
+
+        .services h3 {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .service-item img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .custom {
+            background-color: #e9b0ffce;
+            color: #fff;
+            border-color: #e9b0ffce;
+        }
+
+        .custom:hover {
+            background-color: #e9b0ff;
+            border-color: #e9b0ff;
+            color: black; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm" style="background-color: #ff5c9d">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">Digital Style</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="invest.html">Investement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bank.html">Banking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pay.html">Payment</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand" href="insur.html">Insurance</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="wallet.html">Wallet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+                <li class="nav-item">
+                    <a class="navbar-brand">Jane Tan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Log In</a>
+                </li> 
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br>
+        <h4 class="text-center">Car Insurance</h4>
+        <br>
+        <div class="current-plan">
+            <div>
+                <p><strong>Current Plan:</strong></p>
+                <p>Basic</p>
+                <br>
+                <br>
+                <div class="col-auto">
+                    <a href="insur3.html" class="btn custom-btn">UPGRADE</a>
+                </div>
+            </div>
+            <img src="pic/car2.png" alt="Car Icon">
+        </div>
+        <div class="services">
+            <h3>More services available:</h3>
+            <div class="service-item">
+                <img src="pic/repair1.png" alt="Car Repair">
+                <p>Car Repair booking</p>
+            </div>
+            <div class="service-item">
+                <img src="pic/repair.png" alt="Car Maintenance">
+                <p>Car Maintenance</p>
+            </div>
+            <div class="service-item">
+                <img src="pic/gas.png" alt="Gas Price">
+                <p>Check Gas Price</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="#" class="btn custom-btn">More</a>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
