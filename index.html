@@ -12,22 +12,36 @@
             background-color: #ffc1e396;
         }
 
-
-        .custom-btn {
-            background-color: #e9b0ffce;
-            color: #fff;
-            border-color: #e9b0ffce;
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
         }
 
-        .custom-btn:hover {
-            background-color: #e9b0ff;
-            border-color: #e9b0ff;
-            color: black; 
+        .service {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
         }
 
-        .custom-btn a {
-            color: white; 
-            text-decoration: none;
+        .service img {
+            width: 70%;
+            max-width: 400px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .service-text {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background: #ff5c9d;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
         }
 
         .carousel-item img {
@@ -36,44 +50,8 @@
             object-fit: cover;
         }
 
-        .box1 {
-            display: flex;
-            align-items: center;
-            border: 1px solid #ccc;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            padding-left: 10px;
-            margin: 20px auto;
-            max-width: 800px;
-        }
-
-        .image-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .image-container img {
-            max-width: 150px;
-            height: 80;
-        }
-
-        .image-container h4 {
-            margin: 5px 0 0 0;
-        }
-
-        .box1 p {
-            flex: 1;
-            padding-left: 1cm;
-            margin: 0;
-        }
-
-        footer {
-            background: #ff5c9d;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px;
+        .service:nth-child(even) {
+            flex-direction: row-reverse;
         }
         
     </style>
@@ -146,48 +124,61 @@
         </div>
     </div>
     <br>
-    <div class="box1">
-        <div class="image-container">
-            <a href="pay.html">
-                <img src="pic/imgg1.png" alt="Investment Image">
+    <div class="container">
+        <div class="service">
+            <a href="invest.html">
+                <img src="pic/imgg1.png" >
             </a>
-            <h4>Investment</h4>
+            <div class="service-text">
+                <h2>Investment</h2>
+                <p>
+                  Our investment site provides users with valuable insights and 
+                  tools to help them make informed decisions. Integrated investment solutions for efficient management.
+                </p>
+            </div>
         </div>
-        <p>Our investment site provides users with valuable insights and tools to help them make informed decisions.</p>
-    </div>
 
-    <div class="box1">
-        <div class="image-container">
+        <div class="service">
             <a href="pay.html">
-                <img src="pic/imgg4.png" alt="Investment Image">
+                <img src="pic/imgg4.png">
             </a>
-            <h4>Payment</h4>
+            <div class="service-text">
+                <h2>Payment</h2>
+                <p>Our Payment site allows useer to pay at different platform, make payment at
+                  different countries. Secure and convenient payment options.</p>
+            </div>
         </div>
-        <p>Our Payment site allows useer to pay at different platform, make payment at different countries. And a lot more.</p>
-    </div>
 
-    <div class="box1">
-        <div class="image-container">
+        <div class="service">
             <a href="bank.html">
-                <img src="pic/imgg3.png" alt="Investment Image">
+                <img src="pic/imgg3.png" >
             </a>
-            <h4>Banking</h4>
+            <div class="service-text">
+                <h2>Banking</h2>
+                <p>
+                  banking site prodivs services like paynow, scans code payment and etc.
+                  Seamless banking services tailored to your needs.
+                </p>
+            </div>
         </div>
-        <p>Our banking site prodivs services like paynow, scans code payment and etc</p>
-    </div>
 
-    <div class="box1">
-        <div class="image-container">
-            <a href="insur.html">
-                <img src="pic/imgg5.png" alt="Insurance">
-            </a>
-            <h4>Insurance</h4>
-        </div>
-        <p>Our insurance site provide services like home insurance, care insurance and etc.</p>
+        <div class="service">
+          <a href="insur.html">
+                <img src="pic/imgg5.png" >
+          </a>
+          <div class="service-text">
+              <h2>Insurance</h2>
+              <p>
+                Our insurance site provide services like home insurance, care insurance and etc.
+                Comprehensive insurance plans for peace of mind.
+              </p>
+          </div>
+      </div>
+
     </div>
 
     <footer>
-        <p>© 2024 Digital Style, all rights reserved.</p>
+      <p>© 2024 Digital Style, all rights reserved.</p>
     </footer>
 
 </body>
