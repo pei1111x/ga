@@ -114,6 +114,9 @@
                 <a class="nav-link" href="wallet.html">Wallet</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="aboutus2.html">About Us</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
@@ -122,12 +125,20 @@
                     <a class="navbar-brand">Jane Tan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Log In</a>
+                    <a id="logout-link" class="nav-link" href="index.html">Log Out</a>
                 </li> 
             </ul>
           </div>
         </div>
     </nav>
+
+    <script>
+        document.getElementById('logout-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('You have been logged out.'); 
+            window.location.href = this.href; 
+        });
+      </script>
 
     <div class="container">
         <br>
@@ -149,24 +160,33 @@
             <h3>More services available:</h3>
             <div class="service-item">
                 <img src="pic/repair1.png" alt="Car Repair">
-                <p>Car Repair booking</p>
+                <a href="https://www.autobacs.com.sg/" style="text-decoration: none; color: black;">
+                    <p>Car Repair booking</p>
+                </a>
             </div>
             <div class="service-item">
                 <img src="pic/repair.png" alt="Car Maintenance">
-                <p>Car Maintenance</p>
+                <a href="https://www.bridgestone.com.sg/en/tyre-clinic/drivers-essential/ultimate-car-maintenance-checklist" style="text-decoration: none; color: black;">
+                    <p>Car Maintenance</p>
+                </a>
             </div>
             <div class="service-item">
                 <img src="pic/gas.png" alt="Gas Price">
+                <a href="https://www.motorist.sg/petrol-prices" style="text-decoration: none; color: black;">
                 <p>Check Gas Price</p>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-auto">
-                <a href="#" class="btn custom-btn">More</a>
+                <a href="https://www.bmw.com.sg/en/service-portal/bmw-service.html" class="btn custom-btn">More</a>
+            </div>
+            <div class="col-auto">
+                <a href="insur.html" class="btn custom-btn">Back</a>
             </div>
             <br>
             <br>
         </div>
     </div>
+    
 </body>
 </html>

@@ -74,6 +74,9 @@
                 <a class="nav-link" href="wallet.html">Wallet</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="aboutus2.html">About Us</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
@@ -82,19 +85,27 @@
                 <a class="navbar-brand">Jane Tan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.html">Log In</a>
+                <a id="logout-link" class="nav-link" href="index.html">Log Out</a>
               </li> 
             </ul>
           </div>
         </div>
     </nav>
 
+    <script>
+      document.getElementById('logout-link').addEventListener('click', function(event) {
+          event.preventDefault();
+          alert('You have been logged out.'); 
+          window.location.href = this.href; 
+      });
+    </script>
+
     <div class="container">
         <div class="icon">&#10004;</div>
-        <div class="message">Congratulation you successfully invested</div>
+        <div class="message">Congratulation your insurance have sucessfully upgraded</div>
         <div class="row justify-content-center">
             <div class="col-auto">
-                <a href="invest2.html" class="btn custom-btn">Back</a>
+                <a href="insur4.html" class="btn custom-btn">View</a>
             </div>
             <div class="col-auto">
                 <a href="insur.html" class="btn custom-btn">Home</a>
@@ -110,5 +121,6 @@
           }
           alert(message);
     </script>  
+
 </body>
 </html>

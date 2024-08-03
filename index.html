@@ -67,32 +67,50 @@
             flex: 1;
             padding-left: 1cm;
             margin: 0;
-
         }
+
+        footer {
+            background: #ff5c9d;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+        
     </style>
     
 </head>
 <body>
     <nav class="navbar navbar-expand-sm" style="background-color: #ff5c9d">
         <div class="container-fluid">
-          <a class="navbar-brand" href="home.html">Digital Style</a>
+          <a class="navbar-brand" href="index.html">Digital Style</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+                <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact2.html">Contact Us</a>
               </li>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Log In</a>
-              </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Log In</a>
+                  </li> 
             </ul>
           </div>
         </div>
     </nav>
+
+    <script>
+        document.getElementById('logout-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('You have been logged out.'); 
+            window.location.href = this.href; 
+        });
+      </script>
 
     <div class="container-fluid p-0">
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -104,12 +122,26 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="pic/img3.png" width="1000px" height="350">
+            <div class="carousel-caption">
+                <h1>Welcome to Digital Style</h1>
+                <p>Your One-Stop Solution for Banking, Investment, Payment, and Insurance</p>
+              </div>
           </div>
+
           <div class="carousel-item">
             <img src="pic/img4.png" width="500px" height="350">
+            <div class="carousel-caption">
+                <h1>Welcome to Digital Style</h1>
+                <p>Your One-Stop Solution for Banking, Investment, Payment, and Insurance</p>
+              </div>
           </div>
+
           <div class="carousel-item">
             <img src="pic/img1.png" width="500px" height="350">
+            <div class="carousel-caption">
+                <h1>Welcome to Digital Style</h1>
+                <p>Your One-Stop Solution for Banking, Investment, Payment, and Insurance</p>
+              </div>
           </div>
         </div>
     </div>
@@ -153,6 +185,10 @@
         </div>
         <p>Our insurance site provide services like home insurance, care insurance and etc.</p>
     </div>
+
+    <footer>
+        <p>© 2024 Digital Style, all rights reserved.</p>
+    </footer>
 
 </body>
 </html>

@@ -8,44 +8,31 @@
     <title>Digital Style</title>
 
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
         body {
             background-color: #ffc1e396;
         }
 
-
-        .custom-btn {
-            background-color: #e9b0ffce;
-            color: #fff;
-            border-color: #e9b0ffce;
-            border-radius: 5px;
-            width: 500px;
-        }
-
-        .custom-btn:hover {
-            background-color: #e9b0ff;
-            border-color: #e9b0ff;
-            color: black; 
-        }
-
-        .custom-btn a {
-            color: white; 
-            text-decoration: none;
-        }
-
-        .container {
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
         }
 
-        .icon {
-            font-size: 100px;
-            color: green;
+        footer {
+            background: #ff5c9d;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
         }
-
-        .message {
-            font-size: 20px;
-            margin: 20px 0;
-        }
-
     </style>
 </head>
 <body>
@@ -65,7 +52,7 @@
                 <a class="nav-link" href="bank.html">Banking</a>
               </li>
               <li class="nav-item">
-                <a class="navbar-brand" href="pay.html">Payment</a>
+                <a class="nav-link" href="pay.html">Payment</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="insur.html">Insurance</a>
@@ -74,7 +61,7 @@
                 <a class="nav-link" href="wallet.html">Wallet</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="aboutus2.html">About Us</a>
+                <a class="navbar-brand" href="aboutus2.html">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
@@ -85,39 +72,42 @@
                     <a class="navbar-brand">Jane Tan</a>
                 </li>
                 <li class="nav-item">
-                  <a id="logout-link" class="nav-link" href="index.html">Log Out</a>
-                </li> 
+                    <a id="logout-link" class="nav-link" href="index.html">Log Out</a>
+                </li>
             </ul>
           </div>
         </div>
     </nav>
 
     <script>
-      document.getElementById('logout-link').addEventListener('click', function(event) {
-          event.preventDefault();
-          alert('You have been logged out.'); 
-          window.location.href = this.href; 
-      });
+        document.getElementById('logout-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('You have been logged out.'); 
+            window.location.href = this.href; 
+        });
     </script>
 
-    <div class="container">
-        <div class="icon">&#10004;</div>
-        <div class="message">Congratulation You Have Successfully Top Up Your Payment Account </div>
-        <div class="row justify-content-center">
-            <div class="col-auto">
-                <a href="pay.html" class="btn custom-btn">Back</a>
-            </div>
-        </div>
+    <div class="content">
+        <section id="about" class="container">
+            <br>
+            <h2>About Us</h2>
+            <p>
+                Welcome to Digital Style, where we revolutionize the financial service industry
+                by merging banking, investment, payment, and insurance into one secure,
+                efficient, and user-friendly platform.
+            </p>
+            <p>
+                Our mission is to address the common pain points faced by users of traditional digital wallets,
+                offering a seamless experience that integrates various financial services. We aim to provide
+                convenience and peace of mind through robust security measures and comprehensive service offerings.
+            </p>
+        </section>
     </div>
 
-    <script>
-        var message = "Are You Sure You Want To Top Up?"
-        function tag(message) {
-              alert(message);
-              console.log(message);
-          }
-          alert(message);
-    </script>  
+    <footer>
+        <p>© 2024 Digital Style, all rights reserved.</p>
+    </footer>
+
 
 </body>
 </html>

@@ -109,6 +109,9 @@
                 <a class="nav-link" href="wallet.html">Wallet</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="aboutus2.html">About Us</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
             </ul>
@@ -116,13 +119,21 @@
                 <li class="nav-item">
                     <a class="navbar-brand">Jane Tan</a>
                 </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Log In</a>
-              </li> 
+                <li class="nav-item">
+                  <a id="logout-link" class="nav-link" href="index.html">Log Out</a>
+                </li> 
             </ul>
           </div>
         </div>
     </nav>
+
+    <script>
+      document.getElementById('logout-link').addEventListener('click', function(event) {
+          event.preventDefault();
+          alert('You have been logged out.'); 
+          window.location.href = this.href; 
+      });
+    </script>
 
     <div class="container">
         <br>
@@ -143,6 +154,6 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 </html>

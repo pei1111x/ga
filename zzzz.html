@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .service {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .service img {
+            width: 50%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        .service-text {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .service:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- BMW Value Service Section -->
+        <div class="service">
+            <img src="bmw-service-image.jpg" alt="BMW Service">
+            <div class="service-text">
+                <h2>BMW VALUE SERVICE.</h2>
+                <p>Is your BMW more than 4 years old? Take advantage of preferential pricing and exclusive BMW services to enjoy safety, value retention and unadulterated driving pleasure. Our attractive prices include the use of genuine BMW parts for brakes, microfilters, cooling system and more as well as the time our experts spend on the work.</p>
+                <a href="#">Discover now &gt;</a>
+            </div>
+        </div>
+
+        <div class="service">
+            <img src="bmw-warranty-image.jpg" alt="BMW Warranty">
+            <div class="service-text">
+                <h2>BMW EXTENDED WARRANTY.</h2>
+                <p>Stay covered. With the BMW extended warranty, you can extend the 2-year legal warranty to a term of 5 years or a distance of 200,000 kilometres. During this time, you'll benefit from an extensive range of services, including rapid repair with genuine BMW parts.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
