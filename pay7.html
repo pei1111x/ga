@@ -31,61 +31,44 @@
             text-decoration: none;
         }
 
-        .account-card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background: #fff;
             padding: 20px;
-            width: 90%;
         }
 
-        .account-card .header {
-            font-size: 14px;
-            color: #6c757d;
-            margin-bottom: 10px;
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
         }
 
-        .account-card .content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .statement-info,
+        .bill-summary {
+            margin: 20px 0;
         }
 
-        .account-card .card-info {
-            display: flex;
-            align-items: center;
+        .meter-info table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
         }
 
-        .account-card .card-logo img {
-            height: 40px;
-            margin-right: 10px;
+        .meter-info th,
+        .meter-info td {
+            border: 5px solid whitesmoke;
+            padding: 8px;
+            text-align: center;
         }
 
-        .account-card .card-details {
-            font-size: 16px;
+        .meter-info th {
+            background-color: rgb(250, 207, 214);
         }
 
-        .account-card .card-details .card-type {
-            font-weight: bold;
-            color: #000;
-        }
-
-        .account-card .card-details .card-number {
-            font-size: 14px;
-            color: #6c757d;
-        }
-
-        .account-card .balance {
-            font-size: 24px;
-            font-weight: bold;
-            color: #000;
-        }
-
-        .center-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top:20px ;
+        .bill-summary {
+            background-color: pink;
+            padding: 15px;
         }
 
     </style>
@@ -140,37 +123,49 @@
             alert('You have been logged out.'); 
             window.location.href = this.href; 
         });
-      </script>
+    </script>
 
-    <br>
-    <h2 class="text-center">Top Up Card Balance</h2>
-    <div class="center-container">
-        <div class="account-card">
-            <div class="header">SOURCE ACCOUNT</div>
-            <div class="content">
-                <div class="card-info">
-                    <div class="card-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard Logo">
-                    </div>
-                    <div class="card-details">
-                        <div class="card-type">Wallet</div>
-                        <div class="card-number">3214 3234 2222 5466</div>
-                    </div>
-                </div>
-                <div class="balance">$149,968</div>
-            </div>
+    <div class="container">
+        <div class="header">
+            <h1>Billing Statement</h1>
+        </div>
+        <div class="statement-info">
+            <p><strong>Address:</strong> 1 Kim Seng Promenade Singapore 23 #11-555</p>
+            <p><strong>Statement Date:</strong> Augest 6, 2024</p>
+            <p><strong>Period Statement from:</strong> July 10, 2024</p>
+            <p><strong>Period Statement until:</strong> Augest 10, 2024</p>
+        </div>
+        <div class="meter-info">
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Usage (kWh)</th>
+                    <th>Cost (per kWh)</th>
+                    <th>Amount ($)</th>
+                </tr>
+                <tr>
+                    <td>06 AUG 2024</td>
+                    <td>30.4</td>
+                    <td>10</td>
+                    <td>300.40</td>
+                </tr>
+            </table>
+        </div>
+        <div class="bill-summary">
+            <h2>Bill Summary</h2>
+            <p><strong>Previous Charges ($):</strong> 1.00</p>
+            <p><strong>Current Charges ($):</strong>300.40</p>
+            <p><strong>Total Amount ($):</strong> 301.40</p>
+            <p><strong>Due Date:</strong> AUG 10, 2024</p>
         </div>
     </div>
 
-    <br>
     <div class="row justify-content-center">
         <div class="col-auto">
-            <a href="pay22.html" class="btn custom-btn">Use Another Account</a>
-        </div>
-        <div class="col-auto">
-            <a href="pay3.html" class="btn custom-btn">Next</a>
+            <a href="pay8.html" class="btn custom-btn">Make Payment</a>
         </div>
     </div>
-
+    <br>
+    
 </body>
 </html>

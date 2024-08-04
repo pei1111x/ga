@@ -3,62 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMW Services</title>
+    <title>Billing Statement</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
 
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+}
 
-        .service {
-            display: flex;
-            align-items: center;
-            margin-bottom: 40px;
-        }
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
 
-        .service img {
-            width: 50%;
-            max-width: 600px;
-            height: auto;
-        }
+.account-info,
+.statement-info,
+.bill-summary {
+    margin: 20px 0;
+}
 
-        .service-text {
-            flex: 1;
-            padding: 20px;
-        }
+.meter-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
 
-        .service:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-        
+.meter-info th,
+.meter-info td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.meter-info th {
+    background-color: #f2f2f2;
+}
+
+.bill-summary {
+    background-color: #e6f7ff;
+    padding: 15px;
+    border: 1px solid #b3e0ff;
+}
+
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- BMW Value Service Section -->
-        <div class="service">
-            <img src="bmw-service-image.jpg" alt="BMW Service">
-            <div class="service-text">
-                <h2>BMW VALUE SERVICE.</h2>
-                <p>Is your BMW more than 4 years old? Take advantage of preferential pricing and exclusive BMW services to enjoy safety, value retention and unadulterated driving pleasure. Our attractive prices include the use of genuine BMW parts for brakes, microfilters, cooling system and more as well as the time our experts spend on the work.</p>
-                <a href="#">Discover now &gt;</a>
-            </div>
+        <div class="header">
+            <h1>Billing Statement</h1>
         </div>
-
-        <div class="service">
-            <img src="bmw-warranty-image.jpg" alt="BMW Warranty">
-            <div class="service-text">
-                <h2>BMW EXTENDED WARRANTY.</h2>
-                <p>Stay covered. With the BMW extended warranty, you can extend the 2-year legal warranty to a term of 5 years or a distance of 200,000 kilometres. During this time, you'll benefit from an extensive range of services, including rapid repair with genuine BMW parts.</p>
-            </div>
+        <div class="account-info">
+            <p><strong>Account No.:</strong> 12345678910</p>
+            <p><strong>Account Name:</strong> Leslie Holden</p>
+            <p><strong>Address:</strong> 4344 Poco Mas Drive, Dallas, FL, 33009</p>
+        </div>
+        <div class="statement-info">
+            <p><strong>Statement Date:</strong> November 15, 2021</p>
+            <p><strong>Period Statement from:</strong> November 1, 2021</p>
+            <p><strong>Period Statement until:</strong> November 13, 2021</p>
+        </div>
+        <div class="meter-info">
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Usage (kWh)</th>
+                    <th>Cost (per kWh)</th>
+                    <th>Amount ($)</th>
+                </tr>
+                <tr>
+                    <td>11/01/2021</td>
+                    <td>300</td>
+                    <td>10</td>
+                    <td>3000</td>
+                </tr>
+            </table>
+        </div>
+        <div class="bill-summary">
+            <h2>Bill Summary</h2>
+            <p><strong>Previous Charges ($):</strong> 1.00</p>
+            <p><strong>Current Charges ($):</strong> 3,000.00</p>
+            <p><strong>Total Amount ($):</strong> 3001</p>
+            <p><strong>Due Date:</strong> November 19, 2021</p>
         </div>
     </div>
 </body>

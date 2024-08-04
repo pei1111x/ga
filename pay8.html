@@ -140,7 +140,16 @@
             alert('You have been logged out.'); 
             window.location.href = this.href; 
         });
-      </script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('pay').addEventListener('click', function(event) {
+                event.preventDefault();
+                alert('You have successfully paid the bill.'); 
+                window.location.href = this.href; 
+            });
+        });
+
+    </script>
 
     <br>
     <h2 class="text-center">Top Up Card Balance</h2>
@@ -168,7 +177,7 @@
             <a href="pay22.html" class="btn custom-btn">Use Another Account</a>
         </div>
         <div class="col-auto">
-            <a href="pay3.html" class="btn custom-btn">Next</a>
+            <a href="pay9.html" id="pay" class="btn custom-btn">Pay Now</a>
         </div>
     </div>
 
